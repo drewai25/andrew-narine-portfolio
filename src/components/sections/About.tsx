@@ -75,7 +75,7 @@ export function About() {
                 <img
                   src={drewPhoto}
                   alt="Andrew Narine"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                   style={{ filter: "brightness(1.4) contrast(1.1) saturate(1.1)" }}
                 />
                 {/* Subtle gradient overlay at bottom */}
