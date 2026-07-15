@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Github, Linkedin, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Send, CheckCircle, Phone, MessageCircle } from "lucide-react";
 
 const socialLinks = [
   { Icon: Mail, label: "Email", href: "mailto:princenarine13@gmail.com", display: "princenarine13@gmail.com" },
+  { Icon: Phone, label: "Phone", href: "tel:+12462608590", display: "+1 (246) 260-8590" },
+  { Icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/12462608590", display: "WhatsApp: +1 (246) 260-8590" },
   { Icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/andrew-narine246", display: "linkedin.com/in/andrew-narine246" },
   { Icon: Github, label: "GitHub", href: "https://github.com/drewai25", display: "github.com/drewai25" },
 ];
