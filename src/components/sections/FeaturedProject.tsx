@@ -4,14 +4,14 @@ import { useRef } from "react";
 import { ExternalLink, Github, Database, Activity, Layers, Server } from "lucide-react";
 
 const metrics = [
-  { label: "Hourly Records", value: "87,500+", icon: Database },
-  { label: "Climate Data", value: "10 Years", icon: Activity },
-  { label: "Engineered Features", value: "42", icon: Layers },
-  { label: "Data Pipeline", value: "Production", icon: Server },
+  { label: "Hourly Climate Records", value: "87,500+", icon: Database },
+  { label: "Coordinated AI Agents", value: "5", icon: Layers },
+  { label: "Caribbean Nations Mapped", value: "15", icon: Activity },
+  { label: "Automated Tests Passing", value: "27", icon: Server },
 ];
 
 const techStack = [
-  "Python", "TensorFlow", "Statsmodels", "Pandas", "Streamlit", "MLflow", "ERA5/Copernicus API"
+  "Python", "Multi-Agent Architecture", "LLM Grid Copilot (Gemini)", "TensorFlow", "Statsmodels", "Pandas", "Streamlit", "ERA5/Copernicus API"
 ];
 
 export function FeaturedProject() {
@@ -55,17 +55,22 @@ export function FeaturedProject() {
           <div className="p-8 md:p-12">
             <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-mono mb-4">
-                  Open Source
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-mono">
+                    Open Source
+                  </span>
+                  <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-mono">
+                    FutureCaribbean Agentic AI Buildathon — Track 05
+                  </span>
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-2">CaribbeanGridAI</h3>
                 <p className="text-primary font-medium text-lg">
-                  AI-powered electricity demand forecasting for Barbados and the Caribbean SIDS
+                  Agentic AI platform for energy coordination across Caribbean SIDS
                 </p>
               </div>
               <div className="flex gap-3">
                 <a
-                  href="https://github.com/drewai25"
+                  href="https://github.com/drewai25/CaribbeanGridAI"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="link-github-caribbeangridai"
@@ -84,10 +89,12 @@ export function FeaturedProject() {
             </div>
 
             <p className="text-foreground/75 leading-relaxed text-base mb-8 max-w-3xl">
-              An open-source machine learning system forecasting short and medium-term electricity demand using SARIMA and
-              LSTM models trained on ERA5 climate reanalysis data, historical load profiles, and calendar features.
-              The system identifies demand peaks where solar and battery storage could displace fossil-fuel generation —
-              directly supporting Caribbean energy transition planning.
+              An open-source, agentic AI platform where five coordinated agents — demand forecasting, solar, wind, and
+              battery dispatch under a central orchestrator — model national energy scenarios on ten years of ERA5
+              climate reanalysis data. An LLM-powered Grid Copilot answers grid questions under a strict grounding
+              contract: the LLM explains, deterministic models calculate. The 2030 Barbados scenario was calibrated to
+              real national reference data and independently arrived at the same renewable capacity mix the country
+              actually procured — validating the model against a real-world policy decision.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

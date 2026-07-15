@@ -188,7 +188,7 @@ export function Hero() {
           </button>
           <a
             data-testid="link-download-cv"
-            href="/Andrew_Narine_CV_2026.pdf"
+            href={`${import.meta.env.BASE_URL}Andrew_Narine_CV_2026.pdf`}
             download="Andrew_Narine_CV_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -198,7 +198,7 @@ export function Hero() {
           </a>
           <a
             data-testid="link-download-portfolio"
-            href="/Andrew_Narine_Portfolio_2026.pdf"
+            href={`${import.meta.env.BASE_URL}Andrew_Narine_Portfolio_2026.pdf`}
             download="Andrew_Narine_Portfolio_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"

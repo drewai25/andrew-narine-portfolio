@@ -15,18 +15,34 @@ export function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
+  // Optional: create a free form at https://formspree.io and paste the ID below
+  // (e.g. "xkgwqyzr"). Until then, the form opens a pre-filled email instead —
+  // guaranteed delivery, no backend required.
+  const FORMSPREE_ID = "";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) setSubmitted(true);
-    } catch {
-      setSubmitted(true);
+
+    if (FORMSPREE_ID) {
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(form),
+        });
+        if (res.ok) {
+          setSubmitted(true);
+          return;
+        }
+      } catch {
+        // fall through to mailto
+      }
     }
+
+    const subject = encodeURIComponent(`Portfolio inquiry from ${form.name}`);
+    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
+    window.location.href = `mailto:princenarine13@gmail.com?subject=${subject}&body=${body}`;
+    setSubmitted(true);
   };
 
   return (
@@ -93,9 +109,10 @@ export function Contact() {
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center gap-4 p-8 rounded-xl border border-primary/20 bg-primary/5">
                 <CheckCircle size={40} className="text-primary" />
-                <h3 className="text-lg font-semibold text-white">Message Sent!</h3>
+                <h3 className="text-lg font-semibold text-white">Thanks for reaching out!</h3>
                 <p className="text-muted-foreground text-sm text-center">
-                  Thanks for reaching out. I'll get back to you soon.
+                  Your email draft is ready — just hit send in your mail app, and I'll get back to you soon.
+                  You can also email me directly at princenarine13@gmail.com.
                 </p>
               </div>
             ) : (
