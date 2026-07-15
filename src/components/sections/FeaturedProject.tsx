@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github, Database, Activity, Layers, Server } from "lucide-react";
+import gridaiMap from "../../assets/gridai_map.png";
+import gridaiDashboard from "../../assets/gridai_dashboard.png";
 
 const metrics = [
   { label: "Hourly Climate Records", value: "87,500+", icon: Database },
@@ -96,6 +98,31 @@ export function FeaturedProject() {
               real national reference data and independently arrived at the same renewable capacity mix the country
               actually procured — validating the model against a real-world policy decision.
             </p>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <figure className="rounded-xl overflow-hidden border border-white/10 bg-background/40">
+                <img
+                  src={gridaiMap}
+                  alt="CaribbeanGridAI regional map — 15 Caribbean nations with live and profiled grids"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                <figcaption className="px-4 py-2.5 text-xs text-muted-foreground border-t border-white/10">
+                  Regional landing map — 15 Caribbean grids, sized by peak demand
+                </figcaption>
+              </figure>
+              <figure className="rounded-xl overflow-hidden border border-white/10 bg-background/40">
+                <img
+                  src={gridaiDashboard}
+                  alt="CaribbeanGridAI dashboard — AI battery dispatch decision with forecast metrics"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                <figcaption className="px-4 py-2.5 text-xs text-muted-foreground border-t border-white/10">
+                  Tomorrow's AI dispatch decision — charge window, diesel avoided, CO₂ and fuel savings
+                </figcaption>
+              </figure>
+            </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {metrics.map(({ label, value, icon: Icon }, i) => (
