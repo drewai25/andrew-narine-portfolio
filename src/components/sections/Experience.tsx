@@ -21,7 +21,7 @@ const experiences = [
     type: "past",
     Icon: Briefcase,
     description:
-      "Led AI governance and compliance initiatives, designed frameworks aligned with GDPR, BDPA, and NIST AI RMF standards. Managed a 15-member team across cross-functional AI compliance projects, bridging technical AI development with regulatory requirements.",
+      "Led AI governance and compliance initiatives, designed frameworks aligned with GDPR, BDPA, and NIST AI RMF standards. Coordinated a 15-member cross-functional team across AI compliance projects, bridging technical AI development with regulatory requirements.",
     highlights: ["GDPR Compliance", "NIST AI RMF", "BDPA", "15-person team"],
   },
 ];

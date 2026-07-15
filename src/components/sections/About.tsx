@@ -14,7 +14,7 @@ const highlights = [
 
 const floatingStats = [
   { value: "3+", label: "Years Building AI", corner: "top-right" },
-  { value: "100%", label: "POC Success Rate", corner: "bottom-left" },
+  { value: "6", label: "AI Systems Built", corner: "bottom-left" },
 ];
 
 export function About() {
@@ -100,8 +100,8 @@ export function About() {
                 transition={{ duration: 0.5, delay: 0.65 }}
                 className="absolute -bottom-4 -left-8 bg-card border border-secondary/30 rounded-xl px-3 py-2 shadow-lg shadow-secondary/10 backdrop-blur-sm"
               >
-                <p className="text-lg font-bold text-secondary leading-none">100%</p>
-                <p className="text-[10px] text-muted-foreground mt-0.5 whitespace-nowrap">POC Success Rate</p>
+                <p className="text-lg font-bold text-secondary leading-none">6</p>
+                <p className="text-[10px] text-muted-foreground mt-0.5 whitespace-nowrap">AI Systems Built</p>
               </motion.div>
 
               {/* Corner accent dots */}
@@ -122,14 +122,15 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-foreground/80 leading-relaxed text-base mb-6">
-              Data and AI engineer specializing in energy transition analytics for Small Island Developing States.
-              I design and build end-to-end data pipelines, machine learning models, and retrieval-augmented AI systems
-              that turn complex datasets into decision-ready insights.
+              AI engineer and data analyst who designs end-to-end data pipelines, machine learning models, and
+              retrieval-augmented AI systems that turn complex datasets into decision-ready insights — with
+              production work spanning energy, government services, and business operations.
             </p>
             <p className="text-foreground/80 leading-relaxed text-base mb-8">
-              My current focus is electricity demand forecasting, renewable energy integration, and smart grid
-              applications — combining time-series modelling, MLOps, and cloud infrastructure to help utilities
-              and policymakers plan a cleaner, more resilient grid.
+              My flagship domain is the energy transition: electricity demand forecasting, renewable integration,
+              and grid scenario modelling for Small Island Developing States. The same toolkit — time-series
+              modelling, RAG systems, MLOps, and cloud infrastructure — transfers directly to any industry
+              that needs reliable answers from messy data.
             </p>
 
             <div className="flex flex-wrap gap-2">

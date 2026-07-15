@@ -17,8 +17,8 @@ const awards = [
     color: "primary",
   },
   {
-    title: "GitHub Achievement",
-    subtitle: "Level 6 — 23,600+ XP",
+    title: "FutureCaribbean Global Agentic AI Buildathon",
+    subtitle: "Track 05: Energy, Climate & Resilience — CaribbeanGridAI",
     Icon: Code2,
     color: "primary",
   },

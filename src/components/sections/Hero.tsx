@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
-const roles = ["AI Engineer", "Energy Systems Specialist", "Data Pipeline Architect"];
+const roles = ["AI & Data Analyst", "Machine Learning Engineer", "RAG Systems Developer"];
 
 function AnimatedGrid() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -152,7 +152,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-lg md:text-xl text-muted-foreground mb-3 font-medium"
         >
-          AI &amp; Data Engineer &nbsp;·&nbsp; Energy Systems &amp; Applied AI
+          AI Engineer &amp; Data Analyst &nbsp;·&nbsp; Applied AI &amp; Analytics
         </motion.p>
 
         <motion.div
@@ -170,7 +170,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="max-w-2xl text-muted-foreground text-base md:text-lg leading-relaxed mb-10"
         >
-          Building AI-powered solutions for energy transition in Small Island Developing States (SIDS) and beyond
+          I build AI systems that turn complex data into clear decisions — proven in energy, government services, and business operations
         </motion.p>
 
         <motion.div

@@ -50,7 +50,7 @@ const certs = [
     title: "AI for Data Analysis",
     Icon: GraduationCap,
     iconColor: "#005A8B",
-    href: "#",
+    href: "https://linkedin.com/in/andrew-narine246",
   },
   {
     institution: "University of Pennsylvania",
@@ -90,7 +90,7 @@ const certs = [
     title: "AI Analyst Certification",
     Icon: Shield,
     iconColor: "#1A7A8A",
-    href: "#",
+    href: "https://linkedin.com/in/andrew-narine246",
   },
 ];
 

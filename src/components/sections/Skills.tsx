@@ -29,7 +29,7 @@ const categories = [
     skills: ["RAG Systems", "Hybrid Search", "Vector Databases", "MLflow", "Feature Engineering", "AI Governance"],
   },
   {
-    label: "Other",
+    label: "Analytics & Communication",
     icon: BarChart,
     color: "primary",
     skills: ["Power BI", "Excel", "Data Visualization", "Stakeholder Communication"],
